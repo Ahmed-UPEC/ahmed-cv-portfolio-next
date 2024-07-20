@@ -14,6 +14,7 @@ import covid19Spy from "../assets/covid19-spy.png";
 import virtualAssistant from "../assets/virtual_assistant.png";
 import ma321 from "../assets/ma321.png";
 import Footer from "./Footer";
+import Sidebar from "./Sidebar";
 
 export default function Project() {
   return (
@@ -78,28 +79,7 @@ export default function Project() {
               />
             </div>
           </div>
-          <div className="w-full col-span-8 xl:col-span-2 flex flex-col gap-10">
-            <div className="flex flex-col gap-4">
-              <img
-                src={pic.src}
-                alt="ahmed's picture profil"
-                className="max-w-[125px] xl:max-w-[100%] xl:mx-auto rounded-lg"
-              />
-              <p className="text-sm text-neutral-500/80">
-                I’m Ahmed — a software engineer and photographer from the
-                France.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <p className="uppercase text-xs tracking-[0.15rem] font-semibold text-neutral-400">
-                categories
-              </p>
-              <ul className="flex flex-col text-neutral-800 text-sm gap-1">
-                <Link href="/projects">Projects</Link>
-                <Link href="/certifications">Certifications</Link>
-              </ul>
-            </div>
-          </div>
+          <Sidebar />
         </div>
       </div>
       <Footer />

@@ -2,7 +2,7 @@
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import pic from "../assets/photo.jpg";
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -16,6 +16,7 @@ import certification_data_visualization from "../assets/certification_data_visua
 import certification_date_structures from "../assets/certification_date_structures.jpg";
 import certification_frontend_lib from "../assets/certification_frontend_lib.jpg";
 import certification_web_design from "../assets/certification_web_design.jpg";
+import Sidebar from "./Sidebar";
 
 export default function Certification() {
   return (
@@ -28,7 +29,7 @@ export default function Certification() {
               My Certifications
             </h1>
             <div className="w-11/12 mx-auto lg:w-full grid grid-cols-1 md:grid-cols-2 mt-4 gap-10 gap-y-20">
-            <GridElement
+              <GridElement
                 imagePath={encoder.src}
                 title="Encoder-Decoder Architecture"
                 description=""
@@ -96,28 +97,7 @@ export default function Certification() {
               />
             </div>
           </div>
-          <div className="w-11/12 mx-auto lg:w-full col-span-8 xl:col-span-2 flex flex-col gap-10">
-            <div className="flex flex-col gap-4">
-              <img
-                src={pic.src}
-                alt="ahmed's picture profil"
-                className="max-w-[125px] xl:max-w-[100%] xl:mx-auto rounded-lg"
-              />
-              <p className="text-sm text-neutral-500/80">
-                I’m Ahmed — a software engineer and photographer from the
-                France.
-              </p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <p className="uppercase text-xs tracking-[0.15rem] font-semibold text-neutral-400">
-                categories
-              </p>
-              <ul className="flex flex-col text-neutral-800 text-sm gap-1">
-                <Link href="/projects">Projects</Link>
-                <Link href="/certifications">Certifications</Link>
-              </ul>
-            </div>
-          </div>
+          <Sidebar />
         </div>
       </div>
       <Footer />
