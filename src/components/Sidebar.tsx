@@ -22,6 +22,7 @@ export default function Sidebar() {
         <ul className="flex flex-col text-neutral-800 text-sm gap-1">
           <Link href="/projects">Projects</Link>
           <Link href="/certifications">Certifications</Link>
+          <Link href="/solar">Solar</Link>
           <Link href="/gallery">Gallery</Link>
         </ul>
       </div>

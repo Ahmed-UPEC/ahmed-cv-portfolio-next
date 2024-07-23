@@ -1,0 +1,242 @@
+.solar {
+  background: url("../assets/orbits/bg.png");
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+  contain: strict;
+}
+
+.solar > img {
+  position: absolute;
+  width: 5rem;
+  box-shadow: 0px 0px 50px 2px #fff;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.orbit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+  width: fit-content;
+  aspect-ratio: 1/1;
+}
+
+/* first orbite */
+.orbit {
+  position: absolute;
+  width: 12vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  animation: orbit 60s linear infinite;
+  z-index: 6;
+  transition: all 0.3s ease;
+}
+.orbit:nth-child(1) .orbit-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  animation: orbit 60s linear infinite reverse;
+}
+.orbit:nth-child(1) {
+  background-color: black;
+}
+
+/* second orbite */
+.orbit:nth-child(2) {
+  width: 18vw;
+  aspect-ratio: 1/1;
+  border: 2px solid #999;
+  animation: orbit 120s linear infinite;
+  z-index: 5;
+}
+.orbit:nth-child(2) .orbit-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  animation: orbit 120s linear infinite reverse;
+}
+
+/* third orbite */
+.orbit:nth-child(3) {
+  width: 25vw;
+  aspect-ratio: 1/1;
+  border: 2px solid #666;
+  animation: orbit 180s linear infinite;
+  z-index: 4;
+}
+.orbit:nth-child(3) .orbit-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  animation: orbit 180s linear infinite reverse;
+}
+
+/* fourth orbite */
+.orbit:nth-child(4) {
+  width: 31vw;
+  aspect-ratio: 1/1;
+  border: 2px solid #333;
+  animation: orbit 270s linear infinite;
+  z-index: 3;
+}
+.orbit:nth-child(4) .orbit-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  animation: orbit 270s linear infinite reverse;
+}
+
+/* fifth orbite */
+.orbit:nth-child(5) {
+  width: 38vw;
+  aspect-ratio: 1/1;
+  border: 2px solid #333;
+  box-shadow: inset 0px 0px 100px 2px #555, 0px 0px 100px 2px #555;
+  z-index: 2;
+}
+.orbit:nth-child(5) .orbit-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/* sixth orbite */
+.orbit:nth-child(6) {
+  width: 44vw;
+  aspect-ratio: 1/1;
+  border: 2px solid #222;
+  animation: orbit 360s linear infinite;
+  z-index: 1;
+}
+.orbit:nth-child(6) .orbit-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  animation: orbit 360s linear infinite reverse;
+}
+
+/* orbite item */
+.orbit-item {
+  width: 1.25rem;
+  aspect-ratio: 1/1;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  place-content: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.orbit-item:hover {
+  width: 2rem;
+}
+
+.orbit:hover {
+  animation-play-state: paused;
+  border-color: #fff;
+}
+.orbit:nth-child(5):hover {
+  box-shadow: inset 0px 0px 100px 2px #fff, 0px 0px 100px 2px #fff;
+  border-color: #888;
+}
+
+.orbit:hover .orbit-item img {
+  animation-play-state: paused;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  .solar {
+    min-height: 100vh;
+    max-height: 100vh !important;
+  }
+  .orbit-container {
+    width: 100%;
+  }
+  .orbit {
+    width: 12vw;
+  }
+  .orbit:nth-child(2) {
+    width: 20vw;
+  }
+  .orbit:nth-child(3) {
+    width: 30vw;
+  }
+  .orbit:nth-child(4) {
+    width: 40vw;
+  }
+  .orbit:nth-child(5) {
+    width: 50vw;
+  }
+  .orbit:nth-child(6) {
+    width: 60vw;
+  }
+  .orbit-item:hover {
+    width: 1.75rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .solar {
+    min-height: 100vh;
+    max-height: 100vh !important;
+  }
+  .orbit-container {
+    width: 100%;
+  }
+  .orbit {
+    width: 22vw;
+  }
+  .orbit:nth-child(2) {
+    width: 36vw;
+  }
+  .orbit:nth-child(3) {
+    width: 50vw;
+  }
+  .orbit:nth-child(4) {
+    width: 65vw;
+  }
+  .orbit:nth-child(5) {
+    width: 78vw;
+  }
+  .orbit:nth-child(6) {
+    width: 90vw;
+  }
+  .orbit-item:hover {
+    width: 1.75rem;
+  }
+}
+
+@media (max-width: 456px) {
+  .orbit-item {
+    width: 1rem;
+  }
+}
+
+/* sizes */
+
+.orbit_sm {
+  width: 1rem;
+}
+.orbit_md {
+  width: 1.20rem;
+}
+.orbit_lg {
+  width: 1.40rem;
+}
+.orbit_xl {
+  width: 1.60rem;
+}
+.orbit_2xl {
+  width: 1.80rem;
+}
