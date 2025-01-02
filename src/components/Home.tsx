@@ -14,20 +14,35 @@ export default function Home() {
       <div className="max-w-[95%] md:max-w-[764px] mx-auto border-neutral-200 border px-8">
         {/* Title section */}
         <div className="flex flex-col gap-6 my-20 mb-16">
-          <img src={pic.src} className="max-w-[125px] rounded-full border border-neutral-200 shadow-md" />
+          <img
+            src={pic.src}
+            className="max-w-[125px] rounded-full border border-neutral-200 shadow-md"
+          />
           <strong className="text-xl font-semibold text-neutral-800">
-            I&apos;m Ahmed -- a coder and photographer.
+            I&apos;m Ahmed -- a coder and creator.
           </strong>
           <p className="text-slate-600 text-sm font-normal leading-6">
-            I am a self-taught coder who started coding during the pandemic. I
-            eventually learn design and UI/UX to enhance my websites.{" "}
-            <span className="font-semibold underline underline-offset-2">Learning how to learn from internet</span> is a key skill that
-            I have developed during my journey, and it is addictive. This is why
-            I am doing the same thing with photography & film making starting from scratch
-            and learning key skills to enhance my photography and software such as Davinci & Adobe.
+            I&apos;m a self-taught coder who got into programming during the
+            pandemic. Eventually, I started picking up design and UI/UX to make
+            my websites look and feel better. Along the way, I realized that{" "}
+            <br/>
+            <span className="font-semibold underline underline-offset-2">
+              Learning how to learn from internet
+            </span>{" "}
+            is such an awesome skill —it&apos;s honestly addictive.
             <br />
             <br />
-            <small>Pssst, My dream camera setup is the Sony A7 V with a 28-200mm lens from Tamron.</small>
+            Now, I&apos;m diving into photography and filmmaking with the same
+            approach. I&apos;m starting from scratch, figuring out the basics,
+            and learning to use tools like DaVinci Resolve and Adobe to level up
+            my work. It&apos;s all about the process, and I&apos;m loving it.
+            <br />
+            <br />
+            <br />
+            <small>
+              Pssst, My dream camera setup is the Sony A7 V with a 28-200mm lens
+              from Tamron.
+            </small>
           </p>
         </div>
 
