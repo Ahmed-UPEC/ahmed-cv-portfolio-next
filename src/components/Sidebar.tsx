@@ -4,7 +4,7 @@ import pic from "../assets/photo.jpg";
 
 export default function Sidebar() {
   return (
-    <div className="w-11/12 mx-auto lg:w-full col-span-8 xl:col-span-2 flex flex-col gap-10">
+    <div className="w-11/12 mx-auto lg:w-full col-span-12 xl:col-span-3 flex flex-col gap-10">
       <div className="flex flex-col gap-4">
         <img
           src={pic.src}

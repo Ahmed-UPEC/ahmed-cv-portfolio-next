@@ -21,8 +21,8 @@ export default function Project() {
     <div>
       <Navbar />
       <div className="max-w-[95%] xl:max-w-[1160px] mx-auto py-8">
-        <div className="grid grid-cols-1 xl:grid-cols-10 gap-16">
-          <div className="w-full col-span-8">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-16">
+          <div className="w-full col-span-9 ">
             <h1 className="text-4xl font-medium text-neutral-900 mb-10">
               My Projects
             </h1>
