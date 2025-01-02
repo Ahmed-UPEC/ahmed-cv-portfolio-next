@@ -23,8 +23,8 @@ export default function Home() {
             eventually learn design and UI/UX to enhance my websites.{" "}
             <span className="font-semibold underline underline-offset-2">Learning how to learn from internet</span> is a key skill that
             I have developed during my journey, and it is addictive. This is why
-            I am doing the same thing with photography now started from scratch
-            and learning key skills to enhance my photography.
+            I am doing the same thing with photography & film making starting from scratch
+            and learning key skills to enhance my photography and software such as Davinci & Adobe.
             <br />
             <br />
             <small>Pssst, My dream camera setup is the Sony A7 V with a 28-200mm lens from Tamron.</small>
