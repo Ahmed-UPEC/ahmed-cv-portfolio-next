@@ -12,7 +12,7 @@ export default function Sidebar() {
           className="max-w-[125px] xl:max-w-[100%] xl:mx-auto rounded-lg"
         />
         <p className="text-sm text-neutral-500/80">
-          I’m Ahmed — a software engineer and photographer from the France.
+          I&apos;m Ahmed — a software engineer and photographer from France.
         </p>
       </div>
       <div className="flex flex-col gap-4">
@@ -23,7 +23,7 @@ export default function Sidebar() {
           <Link href="/projects">Projects</Link>
           <Link href="/certifications">Certifications</Link>
           <Link href="/solar">Solar</Link>
-          <Link href="/gallery">Gallery</Link>
+          {/* <Link href="/gallery">Gallery</Link> */}
         </ul>
       </div>
     </div>

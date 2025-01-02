@@ -1,6 +1,6 @@
 .solar {
   background: url("../assets/orbits/bg.png");
-  background-color: black;
+  background-color: white;
   width: 100%;
   min-height: 100vh;
   max-height: 100vh !important;
@@ -44,9 +44,9 @@
   aspect-ratio: 1/1;
   animation: orbit 60s linear infinite reverse;
 }
-.orbit:nth-child(1) {
+/* .orbit:nth-child(1) {
   background-color: black;
-}
+}*/
 
 /* second orbite */
 .orbit:nth-child(2) {
@@ -128,9 +128,6 @@
   padding: 5px;
   transition: all 0.3s ease;
   overflow: hidden;
-}
-.orbit-item:hover {
-  width: 2rem;
 }
 
 .orbit:hover {

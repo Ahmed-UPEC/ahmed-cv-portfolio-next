@@ -104,13 +104,13 @@ function Solar() {
             />
             <OrbitItem
               orbitImage={figma.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Figma"
             />
             <OrbitItem
               orbitImage={intelij.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Intelli J"
             />
@@ -123,13 +123,13 @@ function Solar() {
           >
             <OrbitItem
               orbitImage={html.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="HTML"
             />
             <OrbitItem
               orbitImage={css.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="CSS"
             />
@@ -141,25 +141,25 @@ function Solar() {
             />
             <OrbitItem
               orbitImage={node.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="NodeJS"
             />
             <OrbitItem
               orbitImage={java.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Java"
             />
             <OrbitItem
               orbitImage={python.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Python"
             />
             <OrbitItem
               orbitImage={next.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Next"
             />
@@ -171,13 +171,13 @@ function Solar() {
             />
             <OrbitItem
               orbitImage={flask.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Flask"
             />
             <OrbitItem
               orbitImage={spring.src}
-              className="orbit_md"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Spring"
             />
@@ -197,49 +197,49 @@ function Solar() {
             />
             <OrbitItem
               orbitImage={bash.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Bash"
             />
             <OrbitItem
               orbitImage={junit.src}
-              className="orbit_sm"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="JUnit"
             />
             <OrbitItem
               orbitImage={maven.src}
-              className="orbit_sm"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Maven"
             />
             <OrbitItem
               orbitImage={firebase.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Firebase"
             />
             <OrbitItem
               orbitImage={postgres.src}
-              className="orbit_md"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="PostGres SQL"
             />
             <OrbitItem
               orbitImage={mongo.src}
-              className="orbit_md"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Mongo DB"
             />
             <OrbitItem
               orbitImage={selenium.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Selenium"
             />
             <OrbitItem
               orbitImage={tf.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Tensorflow"
             />
@@ -259,31 +259,31 @@ function Solar() {
           >
             <OrbitItem
               orbitImage={gcp.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Google Cloud Platform"
             />
             <OrbitItem
               orbitImage={aws.src}
-              className="orbit_md"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Amazon Web Services"
             />
             <OrbitItem
               orbitImage={docker.src}
-              className="orbit_lg"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Docker"
             />
             <OrbitItem
               orbitImage={anaconda.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Anaconda"
             />
             <OrbitItem
               orbitImage={linux.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Linux"
             />
@@ -295,7 +295,7 @@ function Solar() {
             />
             <OrbitItem
               orbitImage={postman.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Postman"
             />
@@ -316,19 +316,19 @@ function Solar() {
           >
             <OrbitItem
               orbitImage={zoom.src}
-              className="orbit_md"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Zoom"
             />
             <OrbitItem
               orbitImage={obsidian.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Obsidian"
             />
             <OrbitItem
               orbitImage={blender.src}
-              className="orbit_xl"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Blender"
             />
@@ -340,13 +340,13 @@ function Solar() {
             />
             <OrbitItem
               orbitImage={ur.src}
-              className="orbit_sm"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Unreal Engine"
             />
             <OrbitItem
               orbitImage={unity.src}
-              className="orbit_sm"
+              className="orbit_2xl"
               setHoverTech={setHoverTech}
               tech="Unity"
             />

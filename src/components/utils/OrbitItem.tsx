@@ -17,8 +17,8 @@ function OrbitItem({orbitImage, className = "orbit_md", setHoverTech, tech} : Or
   }
 
   return (
-    <div className={"orbit-item " + className} onMouseEnter={hoverHandler} onMouseLeave={hoverHandler}>
-        <img src={orbitImage} alt="orbit-image"/>
+    <div className={"orbit-item hover:w-10 " + className} onMouseEnter={hoverHandler} onMouseLeave={hoverHandler}>
+        <img src={orbitImage} alt="orbit-image" />
     </div>
   )
 }
