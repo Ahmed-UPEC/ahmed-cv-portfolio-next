@@ -25,7 +25,7 @@ export default function Home() {
             I&apos;m a self-taught coder who got into programming during the
             pandemic. Eventually, I started picking up design and UI/UX to make
             my websites look and feel better. Along the way, I realized that{" "}
-            <br/>
+            <br />
             <span className="font-semibold underline underline-offset-2">
               Learning how to learn from internet
             </span>{" "}
@@ -44,6 +44,20 @@ export default function Home() {
               from Tamron.
             </small>
           </p>
+
+          <div className="bg-transparent rounded-xl w-fit flex items-center gap-4">
+            <a href="mailto:ahmedfrancilien@gmail.com" className="p-2 py-1 bg-black hover:bg-black/80 text-white rounded-md text-sm transition-all duration-150">
+              Reach out via email{" "}
+              <Icon
+                icon="ph:arrow-right-bold"
+                className="inline text-lg pb-1 text-white align-middle"
+              />
+            </a>
+            <small className="flex gap-2 text-red-500 items-center">
+              <div className="w-2 h-2 rounded-3xl bg-red-400"></div>{" "}
+              Not available for work
+            </small>
+          </div>
         </div>
 
         {/* Experience section */}
