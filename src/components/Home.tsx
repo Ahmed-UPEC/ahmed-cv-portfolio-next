@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div className="">
       {/* main container */}
-      <div className="max-w-[95%] md:max-w-[764px] mx-auto border-neutral-200 border px-8">
+      <div className="max-w-[95%] md:max-w-[764px] mx-auto border-neutral-100 border px-8">
         {/* Title section */}
         <div className="flex flex-col gap-6 my-20 mb-16">
           <img
             src={pic.src}
-            className="max-w-[125px] rounded-full border border-neutral-200 shadow-md"
+            className="max-w-[125px] rounded-full border border-neutral-100 shadow-md"
           />
           <strong className="text-xl font-semibold text-neutral-800">
             I&apos;m Ahmed -- a coder and creator.
@@ -45,17 +45,23 @@ export default function Home() {
             </small>
           </p>
 
-          <div className="bg-transparent rounded-xl w-fit flex items-center gap-4">
-            <a href="mailto:ahmedfrancilien@gmail.com" className="p-2 py-1 bg-black hover:bg-black/80 text-white rounded-md text-sm transition-all duration-150">
+          <div className="bg-transparent rounded-xl flex items-center gap-4 justify-between w-full">
+            <a
+              href="mailto:ahmedfrancilien@gmail.com"
+              className="p-2 py-1 bg-black hover:bg-black/80 text-white rounded-md text-sm transition-all duration-150"
+            >
               Reach out via email{" "}
               <Icon
                 icon="ph:arrow-right-bold"
                 className="inline text-lg pb-1 text-white align-middle"
               />
             </a>
-            <small className="flex gap-2 text-red-500 items-center">
-              <div className="w-2 h-2 rounded-3xl bg-red-400"></div>{" "}
-              Not available for work
+            <small className="flex gap-2 text-green-500 items-center">
+              <div className="flex relative justify-center items-center">
+                <div className="w-3 h-3 rounded-3xl bg-green-400 animate-status-pulse absolute" />
+                <div className="w-2 h-2 rounded-3xl bg-green-400" />
+              </div>
+              Available for work
             </small>
           </div>
         </div>
@@ -63,14 +69,20 @@ export default function Home() {
         {/* Experience section */}
         <div className="gap-6">
           <div className="absolute inset-x-0 flex flex-col gap-16 -mt-8">
-            <hr className="border-neutral-200" />
-            <hr className="border-neutral-200" />
+            <hr className="border-neutral-100" />
+            <hr className="border-neutral-100" />
           </div>
           <div className="flex flex-col gap-6 pt-12">
             <h5 className="font-semibold text-sm text-slate-500/60">
               Experience
             </h5>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-7">
+              <GridElement
+                title="CyberShen"
+                description="Developing cyber security tools and services"
+                link="https://cybershen.com/"
+              />
+
               <GridElement
                 title="LittleBigCode"
                 description="Working on a web application to manage data oriented projects."
@@ -95,8 +107,8 @@ export default function Home() {
         {/* Education section */}
         <div className="my-20">
           <div className="absolute inset-x-0 flex flex-col gap-16 -mt-8">
-            <hr className="border-neutral-200" />
-            <hr className="border-neutral-200" />
+            <hr className="border-neutral-100" />
+            <hr className="border-neutral-100" />
           </div>
           <div className="flex flex-col gap-6 pt-12">
             <h5 className="font-semibold text-sm text-slate-500/60">
@@ -130,14 +142,20 @@ export default function Home() {
         {/* Project section */}
         <div className="">
           <div className="absolute inset-x-0 flex flex-col gap-16 -mt-8">
-            <hr className="border-neutral-200" />
-            <hr className="border-neutral-200" />
+            <hr className="border-neutral-100" />
+            <hr className="border-neutral-100" />
           </div>
           <div className="flex flex-col gap-6 pt-16">
             <h5 className="font-semibold text-sm text-slate-500/60">
               Projects
             </h5>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-7">
+              <GridElement
+                title="SupraLinx"
+                description="Creating my own digital agency and creating content for brands from all over the world."
+                link="https://supralinx.com"
+              />
+
               <GridElement
                 title="Virtual Assistant"
                 description="A Web app for UPEC Biometric students with custom biometrics
@@ -165,8 +183,8 @@ export default function Home() {
         {/* More section */}
         <div className="my-20">
           <div className="absolute inset-x-0 flex flex-col gap-16 -mt-8">
-            <hr className="border-neutral-200" />
-            <hr className="border-neutral-200" />
+            <hr className="border-neutral-100" />
+            <hr className="border-neutral-100" />
           </div>
           <div className="flex flex-col gap-6 pt-16">
             <h5 className="font-semibold text-sm text-slate-500/60">More..</h5>
@@ -192,8 +210,8 @@ export default function Home() {
         {/* Elsewhere section */}
         <div className="">
           <div className="absolute inset-x-0 flex flex-col gap-16 -mt-8">
-            <hr className="border-neutral-200" />
-            <hr className="border-neutral-200" />
+            <hr className="border-neutral-100" />
+            <hr className="border-neutral-100" />
           </div>
           <div className="flex flex-col gap-6 pt-16">
             <h5 className="font-semibold text-sm text-slate-500/60">
@@ -203,7 +221,7 @@ export default function Home() {
               <a
                 href="https://www.linkedin.com/in/ahmedsyed75"
                 target="_blank"
-                className="text-xs w-fit px-3 py-2 bg-neutral-100 border-solid rounded border-neutral-200 no-underline border-[1px] shadow-md"
+                className="text-xs w-fit px-3 py-2 bg-neutral-100 border-solid rounded border-neutral-100 no-underline border-[1px] shadow-sm"
               >
                 <Icon
                   icon="mdi:linkedin"
@@ -214,7 +232,7 @@ export default function Home() {
               <a
                 href="https://github.com/Ahmed-UPEC"
                 target="_blank"
-                className="text-xs w-fit px-3 py-2 bg-neutral-100 border-solid rounded border-neutral-200 no-underline border-[1px] shadow-md"
+                className="text-xs w-fit px-3 py-2 bg-neutral-100 border-solid rounded border-neutral-100 no-underline border-[1px] shadow-sm"
               >
                 <Icon
                   icon="mdi:github"
@@ -225,7 +243,7 @@ export default function Home() {
               <a
                 href="https://www.instagram.com/asx.visuals/"
                 target="_blank"
-                className="text-xs w-fit px-3 py-2 bg-neutral-100 border-solid rounded border-neutral-200 no-underline border-[1px] shadow-md"
+                className="text-xs w-fit px-3 py-2 bg-neutral-100 border-solid rounded border-neutral-100 no-underline border-[1px] shadow-sm"
               >
                 <Icon
                   icon="mdi:instagram"
@@ -239,8 +257,8 @@ export default function Home() {
         {/* Footer */}
         <div className="mt-20 mb-8">
           <div className="absolute inset-x-0 flex flex-col gap-16 -mt-8">
-            <hr className="border-neutral-200" />
-            <hr className="border-neutral-200" />
+            <hr className="border-neutral-100" />
+            <hr className="border-neutral-100" />
           </div>
           <div className="pt-16">
             <div className="max-w-[95%] md:max-w-[700px] mx-auto flex gap-2 items-center text-neutral-500 text-xs font-normal">

@@ -14,6 +14,25 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    keyframes: {
+      my_ping: {
+        "0%": {
+          transform: "scale(0.5)",
+          opacity: "1",
+        },
+        "35%, 50%": {
+          transform: "scale(2)",
+          opacity: "0",
+        },
+        "75%, 100%": {
+          transform: "scale(0.5)",
+          opacity: "0",
+        },
+      }
+    },
+    animation: {
+      'status-pulse': 'my_ping 2s linear infinite',
+    },
   },
   plugins: [],
 };

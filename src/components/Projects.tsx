@@ -12,6 +12,9 @@ import netflix from "../assets/netflix.png";
 import instantRepair from "../assets/instantRepair.png";
 import covid19Spy from "../assets/covid19-spy.png";
 import virtualAssistant from "../assets/virtual_assistant.png";
+import supralinx from "../assets/supralinx.png";
+import cybershen from "../assets/cybershen.png";
+import graalsystems from "../assets/graal.png";
 import ma321 from "../assets/ma321.png";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
@@ -27,6 +30,29 @@ export default function Project() {
               My Projects
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-10 gap-y-20">
+              <GridElement
+                imagePath={supralinx.src}
+                title="SupaLinx"
+                description="Creating my own digital agency and creating content for brands from all over the world."
+                tags={["Design", "Creation", "Web", "Branding"]}
+                link="https://supralinx.com/"
+              />
+
+              <GridElement
+                imagePath={cybershen.src}
+                title="CyberShen"
+                description="Developing cyber security tools and services."
+                tags={["NextJS", "Cyber", "Branding"]}
+                link="https://supralinx.com/"
+              />
+
+              <GridElement
+                imagePath={graalsystems.src}
+                title="GraalSystems"
+                description="Working on a web application to manage data oriented projects."
+                tags={["NextJS", "Vercel", "Data", "Branding"]}
+                link="https://graal-systems.vercel.app"
+              />
               <GridElement
                 imagePath={virtualAssistant.src}
                 title="Virtual Assistant"
